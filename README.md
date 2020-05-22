@@ -1,19 +1,34 @@
 
-#  Final Project Requirements
+#  A Machine Learning Analysis of NYC Non-Emergency Service Requests
 
-## Introduction
+## Project Abstract
 
-In this lesson, we'll discuss the requirements and expectations for our **Capstone Project**!
+To support New York City city managers' plans for workload and resource distribution it is important to understand where and when issues will arise across the city. NYC receives roughly 2 million non-emergency service requests (or complaints) via 311 (the city’s non-emergency service line) each year. The city is committed to resolving each complaint received in a timely manner, which means that it must be prepared to anticipate what service requests will be received and to activate and support the appropriate responding city agency. As NYC is a large city with very diverse neighborhoods, the types of requests, the volume of those requests, and the time in which they are resolved are likely to vary greatly in different areas. To help city managers prepare for the future we will visualize and analyze historical 311 data to identify trends in call volume, response times, and geographic concentration of issues. 
 
-## Objectives
 
-You will be able to:
+## Data
 
-* Describe all required aspects of the final project
-* Describe all required deliverables
-* Describe what constitutes a successful project
-* Describe what the experience of the project review should be like
+There is a lot of data! NYC 311 has over 10 years worth of service request data that is updated daily via NYC Open Data (see link below), which currently includes over 20 million unique records. There are 40 values for each record that roughly contain time, location, responsible city agency, complaint type, community board, and complaint method (online, phone, etc.). Most of the data is categorical, however a number of continuous variables may be derived. 
 
+To augment this data we will combine it with data from the 2018 U.S. Census American Community Survey 5-year summary (see link and library below). The demographic data will hopefully help us see if there are complaint trends that have a relationship with specific demographic factors. We will use zip codes to specify geographic groups, as that is the clearest geographic grouping in the 311 data still providing for a significant number of different values. As it turns out, the census does not regularly use zip codes, and therefore only estimates zip code approximations for the 5-year summary. These are known as Zip Code Tabulation Areas (ZCTA).  After removing zip codes that do not appear in both sets of data, and removing zip codes with a population of zero, we are left with 184 unique NYC zip codes. 
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+            <td>third column</td>
+        </tr>
+        <tr>
+			<td>second row</td>
+      </tr>
+    </tbody>
+</table>
 
 ### Final Project Requirements
 
