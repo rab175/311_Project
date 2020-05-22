@@ -12,23 +12,89 @@ There is a lot of data! NYC 311 has over 10 years worth of service request data 
 
 To augment this data we will combine it with data from the 2018 U.S. Census American Community Survey 5-year summary (see link and library below). The demographic data will hopefully help us see if there are complaint trends that have a relationship with specific demographic factors. We will use zip codes to specify geographic groups, as that is the clearest geographic grouping in the 311 data still providing for a significant number of different values. As it turns out, the census does not regularly use zip codes, and therefore only estimates zip code approximations for the 5-year summary. These are known as Zip Code Tabulation Areas (ZCTA).  After removing zip codes that do not appear in both sets of data, and removing zip codes with a population of zero, we are left with 184 unique NYC zip codes. 
 
+For this analysis we've also reduced the dataset down to the 6 most common agancies and removed incomplete records, records with dummy values, or values that are non-sensical (e.g. closed date earlier than created date). After cleaning and down selecting our initial dataset is comrised of 24 variables. Select variables include:  
+
 <table>
     <thead>
         <tr>
-            <th colspan="3">The table header</th>
+            <th colspan="5">Select Variables in Cosideration (see full list in link below)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>The table body</td>
-            <td>with two columns</td>
-            <td>third column</td>
+            <td>**Variable**</td>
+            <td>**Description**</td>
+            <td>**Data type**</td>
+            <td>**Unique values**</td>
+            <td>**Source**</td>
         </tr>
         <tr>
-			<td>second row</td>
-      </tr>
+            <td>Created date</td>
+            <td>Date service request was created</td>
+            <td>Datetime - year-month-day hour:min:sec</td>
+            <td>11,822,621</td>
+            <td>NYC 311</td>
+        </tr>
+        <tr>
+            <td>Agency</td>
+            <td>Date service request was created</td>
+            <td>Categorical - string - ex. 'NYPD' or 'HPD'</td>
+            <td>6</td>
+            <td>NYC 311</td>
+        </tr>
+        <tr>
+            <td>Complaint Type</td>
+            <td>This is the first level of a hierarchy identifying the topic of the incident or condition. Complaint Type may have a corresponding Descriptor or may stand alone.</td>
+            <td>Categorical - string - ex. 'Noise - Residential', or 'Heat/Hot Water'</td>
+            <td>162</td>
+            <td>NYC 311</td>
+        </tr>
+        <tr>
+            <td>Borough</td>
+            <td>NYC Borough where request submitted</td>
+            <td>Categorical - string - ex. 'BRONX', or 'BROOKLYN'</td>
+            <td>6</td>
+            <td>NYC 311</td>
+        </tr>
+        <tr>
+            <td>Zip code</td>
+            <td>5-digit zip code derived from the reported incident zip and compared to available zip codes (with population > 0) provided by the Census</td>
+            <td>Categorical - string - ex. '11101'</td>
+            <td>184</td>
+            <td>NYC 311 and US Census</td>
+        </tr>
+        <tr>
+            <td>Total population</td>
+            <td>Total estimated population within the ZCTA</td>
+            <td>Continuous - integer'</td>
+            <td>184</td>
+            <td>US Census</td>
+        </tr>
+        <tr>
+            <td>Median Income</td>
+            <td>Estimated median income within the ZCTA</td>
+            <td>Continuous - integer'</td>
+            <td>183</td>
+            <td>US Census</td>
+        </tr>
+        <tr>
+            <td>HS or above</td>
+            <td>Estimated % with high school degree or above</td>
+            <td>Continuous - integer'</td>
+            <td>184</td>
+            <td>US Census</td>
+        </tr>
+        <tr>
+            <td>Response time</td>
+            <td>Duration of time between service request created data and closed date - in days</td>
+            <td>Continuous - integer'</td>
+            <td>>10 million</td>
+            <td>Calculated from 311 data</td>
+        </tr>
     </tbody>
 </table>
+
+
 
 ### Final Project Requirements
 
