@@ -22,11 +22,11 @@ For this analysis we've also reduced the dataset down to the 6 most common aganc
     </thead>
     <tbody>
         <tr>
-            <td>**Variable**</td>
-            <td>**Description**</td>
-            <td>**Data type**</td>
-            <td>**Unique values**</td>
-            <td>**Source**</td>
+            <td><b>Variable</b></td>
+            <td><b>Description</b></td>
+            <td><b>Data type</b></td>
+            <td><b>Unique values</b></td>
+            <td><b>Source</b></td>
         </tr>
         <tr>
             <td>Created date</td>
