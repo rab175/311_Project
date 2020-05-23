@@ -133,21 +133,16 @@ In order to make more affirmative recommendations we recommend that further refi
 ## Citations
 
 * <p><a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">NYC Open Data - 311 Service Requests from 2010 to Present</a></p> 
-
 * <p><a href="https://www.census.gov/data/developers/data-sets/acs-5year.html">U.S. Census - American Community Survey 5-Year Data</a></p> 
-
 * <p><a href="https://github.com/jtleider/censusdata">Census Data Python API Library</a></p> 
-
 * <p><a href="https://machinelearningmastery.com/time-series-forecasting-long-short-term-memory-network-python/">Time Series Forecasting with the Long Short-Term Memory Network in Python, Machine Learning Mastery</a></p> 
 
 ### Research Papers Reviewed:
 
-
 * <p><a href="http://www.cs.binghamton.edu/~anand/paper/Mobiquitous2018.pdf">NYCER: A Non-Emergency Response Predictor for NYC using Sparse Gaussian Conditional Random Fields, DeFazio et. al.</a></p> 
-
 * <p><a href="https://arxiv.org/pdf/1611.06660.pdf">Structure of 311 Service Requests as a Signature of Urban Location, Wang et. al.</a></p> 
-
 * <p><a href="https://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/view/8834/8266"> Profiling and Prediction of Non-Emergency Calls in New York City, Zha et. al.</a></p> 
 
+### Additional Materials
 
-
+* <p><a href="https://docs.google.com/presentation/d/1qnCLQuyH6mBJzfZ3jXjMQ_BEnuKsuFkLOE1JllTLyYg/edit?usp=sharing">Non-technical Presentation</a></p>
