@@ -116,6 +116,11 @@ To identify and analyze geographic trends we visualized the date and conducted h
 <strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
 </center>
 
+<center><img src='images/Model Performance.png'>
+<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
+</center>
+
+
 Insert Graphs and Results
 
 ## Recommendations
