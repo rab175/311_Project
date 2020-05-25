@@ -112,12 +112,8 @@ To identify and analyze geographic trends we visualized the date and conducted h
 
 ## Outcomes
 
-<center><img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/end-of-tunnel.gif'>
-<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
-</center>
-
 <center><img src='images/Model Performance.png'>
-<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
+<strong><em>LSTM slighly outperforms SARIMA with an RMSE of 449 vs 459</strong></em>
 </center>
 
 
