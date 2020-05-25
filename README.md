@@ -112,6 +112,15 @@ To identify and analyze geographic trends we visualized the date and conducted h
 
 ## Outcomes
 
+<center><img src='images/Noise Response Distribution.png'>
+<srtong><em> Zip codes in the top income range expereience statistically significantly differnt response times than zip codes in lower income ranges</strong></em>
+</center>
+
+<center><img src='images/top_complaint.html'>
+<srtong><em> Most common complaint type by zipcode</strong></em>
+</center>
+
+
 <center><img src='images/Model Performance.png'>
 <strong><em>LSTM slighly outperforms SARIMA with an RMSE of 449 vs 459</strong></em>
 </center>
