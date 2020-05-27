@@ -112,25 +112,30 @@ To identify and analyze geographic trends we visualized the date and conducted h
 
 ## Outcomes
 
+Before moving into our ML analysis predicting response times and call volumes, we explored and visualized the data to observe a few high level trends. We observed that different complaint types and areas of the city express very different trends. This ultimately led to the useful insight that our models need to be pointed at fairly specific slices of the data. Since our models in this instance are univariate, that's not too surprising. Model performance was not as strong when it attempted to predict something like citiy-wide respose time. Considering that we were looking at ~30 different types of complaints from across a very diverse metropolitan area, again, that's not too surprising. The response for a noise complaint is likely more timely that something like a pothole or a dead tree, as the issues occur over different time frames and have very different responses. 
+
+For the sake of simplicity for this project we modeled only city-wide trends and trend concerning the most populat complaint types. But first we were intrested to see how demographics and geography may relate to how residents experience response time or types of issues. 
+
 <center>
     <strong><em> Zip codes in the top income range expereience statistically significantly differnt response times than zip codes in lower income ranges</strong></em>
     <img src='images/Noise Response Distribution.png'>
-
 </center>
 
+Our first observation was that median income of a zipcode does appear to have some relationship with response times for residential noise complaints, as there is a statistically significant differrence in mean response times across income ranges. Futher analysis is required to look into this, as a number of other factors likely contribute more directly to the mean response time for these differnt areas, such as volume of complaints or geographic concentration/dispersion, but it is an interesting first insight. 
 
 <center>
     <strong><em> Most common complaint type by zipcode</strong></em>
     <img src='images/Top Complaint Category by Zip.png'>
 </center>
 
+Another interesting thing to observe was which compliants occured most frequently in each zipcode. The most interesting insight was that although heat and hot water complaints are the second most common complaint type by volume (by a large margin), it is only the most common complaint in ~8 of the ~160 zip codes we analyzed. It would be interesteing to research this further to determine why these are so tightly clustered and how this may be addressed. 
 
 <center>
     <strong><em>LSTM slighly outperforms SARIMA with an RMSE of 449 vs 459</strong></em>
     <img src='images/Model Performance.png'>
 </center>
 
-
+When it came to modeling we used an LSTM and SARIMA to constuct univariate models of call volumes and response times based on historical data. The LSTM only slightly outperfomed  SARIMA with ~10% margin of error when predicting call volumes and responses. As mentioned previously, the models become more accurate the more you refine the data selection down to specific complaint types and geographies. 
 
 ## Recommendations
 
