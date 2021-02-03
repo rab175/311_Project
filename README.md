@@ -117,7 +117,7 @@ Before moving into our ML analysis predicting response times and call volumes, w
 For the sake of simplicity for this project we modeled only city-wide trends and trend concerning the most populat complaint types. But first we were intrested to see how demographics and geography may relate to how residents experience response time or types of issues. 
 
 <center>
-    <strong><em> Zip codes in the top income range expereience statistically significantly differnt response times than zip codes in lower income ranges</strong></em>
+    <strong><em> Zip codes in the top income range experience statistically significantly different response times than zip codes in lower income ranges</strong></em>
     <img src='images/Noise Response Distribution.png'>
 </center>
 
